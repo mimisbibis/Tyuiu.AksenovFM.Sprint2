@@ -4,7 +4,7 @@ namespace Tyuiu.AksenovFM.Sprint2.Task6.V1.Lib
 {
     public class DataService : ISprint2Task6V1
     {
-        public int FindAmountDaysInMonth(int value)
+        public int FindMonthDaysCount(int value)
         {
             return value switch
             {
@@ -20,7 +20,7 @@ namespace Tyuiu.AksenovFM.Sprint2.Task6.V1.Lib
                 10 => 31,
                 11 => 30,
                 12 => 31,
-                _ => throw new ArgumentException($"Месяц от 1 до 12. Значенгие {value}")
+                _ => throw new ArgumentException($"Месяц от 1 до 12. Значегние {value}")
             };
         }
     }
