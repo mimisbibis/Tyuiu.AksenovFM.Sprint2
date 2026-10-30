@@ -11,7 +11,9 @@ namespace Tyuiu.AksenovFM.Sprint2.Task4.V4.Test
             DataService ds = new DataService();
             double x = 1;
             double y = 10;
+
             double wait = 20.841;
+
             double res = ds.Calculate(x, y);
             Assert.AreEqual(wait, res);
         }
@@ -22,8 +24,10 @@ namespace Tyuiu.AksenovFM.Sprint2.Task4.V4.Test
             DataService ds = new DataService();
             double x = 10;
             double y = 5;
+
             double wait = 100.284;
             double res = ds.Calculate(x, y);
+
             Assert.AreEqual(wait, res);
         }
     }
