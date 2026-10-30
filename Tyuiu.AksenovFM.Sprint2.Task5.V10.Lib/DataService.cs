@@ -43,7 +43,10 @@ namespace Tyuiu.AksenovFM.Sprint2.Task5.V10.Lib
                 }
             }
 
-            return $"{prevDay}.{prevMonth}.{prevYear}";
+            string dayStr = prevDay.ToString("D2");
+            string monthStr = prevMonth.ToString("D2");
+
+            return $"{dayStr}.{monthStr}.{prevYear}";
         }
     }
 }
