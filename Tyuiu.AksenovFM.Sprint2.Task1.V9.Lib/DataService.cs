@@ -18,7 +18,7 @@ namespace Tyuiu.AksenovFM.Sprint2.Task1.V9.Lib
             res[2] = (a > b) || (c < d);
             res[3] = (a > b) && (c < d);
             res[4] = !(res[0]);
-            res[5] = (a > b) ^ (c < d);
+            res[5] = (a > b) ^ (c + 900 < d);
 
             return res;    
         } 
