@@ -1,26 +1,17 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint2;
-namespace Tyuiu.AksenovFM.Sprint2.Task2.V6.Lib
-{
-    public class DataService : ISprint2Task2V6
-    {
-        public bool CheckDotInShadedArea(int x, int y)
-        {
-            bool res;
-            if (((x >= 3) && (x <= 5) && (y >= 3) && (y <= 7))
-                ((x >= 6) && (x <= 10) && (y >= 5) && (y <= 7))
-                ((x >= 9) && (x <= 10) && (y >= 3) && (y <= 4))
-                ((x >= 6) && (x <= 9) && (y >= 8) && (y <= 10))
-                ((x >= 3) && (x <= 12) && (y >= 11)) ||
-                ((x >= 7) && (x <= 10) && (y >= 12)))
-            {
-                res = true;
-            }
-            else
-            {
-                res = false;
-            }
+﻿using Tyuiu.AksenovFM.Sprint2.Task2.V6.Lib;
 
-            return res;
-        }
+public class DataServiceTest
+{
+    [TestMethod]
+    public void ValidCheckDotInShadedArea()
+    {
+        DataService ds = new DataService();
+        int x = 4;
+        int y = 4;
+
+        bool res = ds.CheckDotInShadedArea(x, y);
+        bool wait = true;
+
+        Assert.AreEqual(wait, res);
     }
 }
