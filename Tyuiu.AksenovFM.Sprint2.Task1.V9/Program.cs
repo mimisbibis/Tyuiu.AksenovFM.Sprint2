@@ -1,5 +1,6 @@
 ﻿using Tyuiu.AksenovFM.Sprint2.Task1.V9.Lib;
 namespace Tyuiu.AksenovFM.Sprint2.Task1.V9
+
 {
     internal class Program
     {
