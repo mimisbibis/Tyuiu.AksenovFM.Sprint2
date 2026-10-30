@@ -15,7 +15,7 @@ namespace Tyuiu.AksenovFM.Sprint2.Task6.V1
             Console.WriteLine("Введите номер месяца: ");
             int value = Convert.ToInt32(Console.ReadLine());
 
-            int res = ds.FindAmountDaysInMonth(value);
+            int res = ds.FindMonthDaysCount(value);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
